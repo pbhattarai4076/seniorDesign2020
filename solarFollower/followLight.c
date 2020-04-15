@@ -85,12 +85,12 @@ int main(int argc, char *argv[])
           if ((A > 0 && B > 0) || (A < 0 && B > 0))
           {
               moveLower(mapLow(A));
-              moveUpper(mapUp(sqrt(A*A+B*B)));
+              moveUpper(mapUp(sqrt((A*A)+(B*B))));
           }
           else if ((A < 0 && B < 0) || (A > 0 && B < 0))
           {
               moveLower(mapLow(-A));
-              moveUpper(mapUp(-sqrt(A*A+B*B));
+              moveUpper(mapUp(-sqrt((A*A)+(B*B)));
           } 
 	  	
           sleep(2); // Wait 2 seconds
